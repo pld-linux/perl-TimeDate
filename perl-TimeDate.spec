@@ -19,7 +19,7 @@ Summary(sv):	TimeDate Perlmodul
 Summary(uk):	Модуль для Perl TimeDate
 Summary(zh_CN):	TimeDate Perl дё©И
 Name:		perl-TimeDate
-Version:	1.1301
+Version:	1.14
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
