@@ -3,13 +3,14 @@ Summary:	TimeDate perl module
 Summary(pl):	Modu³ perla TimeDate
 Name:		perl-TimeDate
 Version:	1.10
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Time/TimeDate-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
