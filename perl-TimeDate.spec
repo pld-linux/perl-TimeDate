@@ -3,7 +3,7 @@ Summary:	TimeDate perl module
 Summary(pl):	Modu³ perla TimeDate
 Name:		perl-TimeDate
 Version:	1.10
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -31,26 +31,17 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/TimeDate
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv -f .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        ChangeLog README
+gzip -9nf ChangeLog README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {ChangeLog,README}.gz
-
+%doc *.gz
 %{perl_sitelib}/Date/*.pm
 %{perl_sitelib}/Time/*.pm
-%{perl_sitearch}/auto/TimeDate
-
 %{_mandir}/man3/*
