@@ -1,26 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Time
 %define		pnam	Date
-Summary:	TimeDate Perl module
-Summary(cs):	Modul TimeDate pro Perl
-Summary(da):	Perlmodul TimeDate
-Summary(de):	TimeDate Perl Modul
-Summary(es):	Módulo de Perl TimeDate
-Summary(fr):	Module Perl TimeDate
-Summary(it):	Modulo di Perl TimeDate
-Summary(ja):	TimeDate Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	TimeDate ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul TimeDate
-Summary(pl):	Modu³ Perla TimeDate
-Summary(pt):	Módulo de Perl TimeDate
-Summary(pt_BR):	Módulo Perl TimeDate
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl TimeDate
-Summary(sv):	TimeDate Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl TimeDate
-Summary(zh_CN):	TimeDate Perl Ä£¿é
+Summary:	Manipulating timezones and parsing/formatting dates in Perl
+#Summary(pl):	
 Name:		perl-TimeDate
 Version:	1.14
 Release:	1
+Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
@@ -29,57 +15,27 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-TimeDate contains: Date::Format, Date::Parse, Date::Language,
-Time::Zone.
+TimeDate contains Date::Format, Date::Parse and Time::Zone.
 
-%description -l cs
-Modul TimeDate pro Perl.
+Date::Format provides routines to format dates into ASCII strings.
+They correspond to the C library routines strftime() and ctime().
 
-%description -l da
-Perlmodul TimeDate.
+Date::Parse provides two routines for parsing date strings into time
+values: str2time(DATE [, ZONE]) and strptime(DATE [, ZONE]).
 
-%description -l de
-TimeDate Perl Modul.
-
-%description -l es
-Módulo de Perl TimeDate.
-
-%description -l fr
-Module Perl TimeDate.
-
-%description -l it
-Modulo di Perl TimeDate.
-
-%description -l ja
-TimeDate Perl ¥â¥¸¥å¡¼¥ë
-
-%description -l ko
-TimeDate ÆÞ ¸ðÁÙ.
-
-%description -l no
-Perlmodul TimeDate.
+Time::Zone contains miscellaneous timezone manipulations routines.
 
 %description -l pl
-TimeDate zawiera modu³y: Date::Format, Date::Parse, Date::Language,
-Time::Zone.
+TimeDate zawiera modu³y: Date::Format, Date::Parse i Time::Zone.
 
-%description -l pt
-Módulo de Perl TimeDate.
+Date::Format dostarcza funkcje, formatuj±ce datê w ci±gi ASCII.
+Funkcje te odpowiadaj± strftime() i ctime() z biblioteki C.
 
-%description -l pt_BR
-Módulo Perl TimeDate.
+Date::Parse udostêpnia dwie funkcje do przetwarzania dat w warto¶ci
+time: str2time(DATE [, ZONE]) and strptime(DATE [, ZONE]).
 
-%description -l ru
-íÏÄÕÌØ ÄÌÑ Perl TimeDate.
-
-%description -l sv
-TimeDate Perlmodul.
-
-%description -l uk
-íÏÄÕÌØ ÄÌÑ Perl TimeDate.
-
-%description -l zh_CN
-TimeDate Perl Ä£¿é
+Time::Zone zawiera ró¿ne funkcje, s³u¿±ce do manipulowania strefami
+czasowymi.
 
 %prep
 %setup -q -n %{pdir}%{pnam}-%{version}
