@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Time
-%define	pnam	Date
+%define		pdir	Time
+%define		pnam	Date
 Summary:	Manipulating timezones and parsing/formatting dates in Perl
 Summary(pl):	Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
 Name:		perl-TimeDate
