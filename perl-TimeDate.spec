@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Digest
-%define		pnam	MD5
+%define		pdir	Time
+%define		pnam	Date
 Summary:	TimeDate Perl module
 Summary(cs):	Modul TimeDate pro Perl
 Summary(da):	Perlmodul TimeDate
