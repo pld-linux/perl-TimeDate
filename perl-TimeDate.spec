@@ -82,7 +82,7 @@ TimeDate Perlmodul.
 TimeDate Perl Ä£¿é
 
 %prep
-%setup -q -n TimeDate-%{version}
+%setup -q -n %{pdir}%{pnam}-%{version}
 
 %build
 perl Makefile.PL
