@@ -7,7 +7,8 @@ Name:		perl-TimeDate
 Version:	1.16
 Release:	1
 Epoch:		1
-License:	GPL
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
 # Source0-md5:	b3cc35a7cabd106ac8829d2f2ff4bd9d
