@@ -3,7 +3,7 @@ Summary:	TimeDate perl module
 Summary(pl):	Modu³ perla TimeDate
 Name:		perl-TimeDate
 Version:	1.10
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Time/TimeDate-%{version}.tar.gz
