@@ -37,8 +37,8 @@ TimeDate zawiera modu³y: Date::Format, Date::Parse i Time::Zone.
 Date::Format dostarcza funkcje, formatuj±ce datê w ci±gi ASCII.
 Funkcje te odpowiadaj± strftime() i ctime() z biblioteki C.
 
-Date::Parse udostêpnia dwie funkcje do przetwarzania dat w warto¶ci
-time: str2time(DATE [, ZONE]) and strptime(DATE [, ZONE]).
+Date::Parse udostêpnia dwie funkcje do zamiany ci±gów ASCII na
+warto¶ci time: str2time(DATE [, ZONE]) oraz strptime(DATE [, ZONE]).
 
 Time::Zone zawiera ró¿ne funkcje, s³u¿±ce do manipulowania strefami
 czasowymi.
