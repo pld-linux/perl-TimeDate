@@ -19,8 +19,8 @@ Summary(sv):	TimeDate Perlmodul
 Summary(uk):	Модуль для Perl TimeDate
 Summary(zh_CN):	TimeDate Perl дё©И
 Name:		perl-TimeDate
-Version:	1.12
-Release:	2
+Version:	1.1301
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
