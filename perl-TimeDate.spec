@@ -4,13 +4,13 @@
 Summary:	Manipulating timezones and parsing/formatting dates in Perl
 Summary(pl):	Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
 Name:		perl-TimeDate
-Version:	1.14
-Release:	2
+Version:	1.16
+Release:	1
 Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
-# Source0-md5:	8a33b5186366f738ec736c58442d1c80
+# Source0-md5:	b3cc35a7cabd106ac8829d2f2ff4bd9d
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
