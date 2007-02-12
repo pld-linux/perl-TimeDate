@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	Date
 Summary:	Manipulating timezones and parsing/formatting dates in Perl
-Summary(pl):	Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
+Summary(pl.UTF-8):   Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
 Name:		perl-TimeDate
 Version:	1.16
 Release:	2
@@ -31,16 +31,16 @@ values: str2time(DATE [, ZONE]) and strptime(DATE [, ZONE]).
 
 Time::Zone contains miscellaneous timezone manipulations routines.
 
-%description -l pl
-TimeDate zawiera modu³y: Date::Format, Date::Parse i Time::Zone.
+%description -l pl.UTF-8
+TimeDate zawiera moduÅ‚y: Date::Format, Date::Parse i Time::Zone.
 
-Date::Format dostarcza funkcje, formatuj±ce datê w ci±gi ASCII.
-Funkcje te odpowiadaj± strftime() i ctime() z biblioteki C.
+Date::Format dostarcza funkcje, formatujÄ…ce datÄ™ w ciÄ…gi ASCII.
+Funkcje te odpowiadajÄ… strftime() i ctime() z biblioteki C.
 
-Date::Parse udostêpnia dwie funkcje do zamiany ci±gów ASCII na
-warto¶ci time: str2time(DATE [, ZONE]) oraz strptime(DATE [, ZONE]).
+Date::Parse udostÄ™pnia dwie funkcje do zamiany ciÄ…gÃ³w ASCII na
+wartoÅ›ci time: str2time(DATE [, ZONE]) oraz strptime(DATE [, ZONE]).
 
-Time::Zone zawiera ró¿ne funkcje, s³u¿±ce do manipulowania strefami
+Time::Zone zawiera rÃ³Å¼ne funkcje, sÅ‚uÅ¼Ä…ce do manipulowania strefami
 czasowymi.
 
 %prep
