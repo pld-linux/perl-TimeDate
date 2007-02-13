@@ -6,7 +6,7 @@
 %define		pdir	Time
 %define		pnam	Date
 Summary:	Manipulating timezones and parsing/formatting dates in Perl
-Summary(pl.UTF-8):   Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
+Summary(pl.UTF-8):	Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
 Name:		perl-TimeDate
 Version:	1.16
 Release:	2
