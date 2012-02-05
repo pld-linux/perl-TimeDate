@@ -14,8 +14,9 @@ Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/TimeDate/%{pdir}%{pnam}-%{version}.tar.gz
 # Source0-md5:	7da7452bce4c684e4238e6d09b390200
+URL:		http://search.cpan.org/dist/TimeDate/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -65,8 +66,14 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_vendorlib}/Date/*.pm
+%{perl_vendorlib}/Date/Format.pm
+%{perl_vendorlib}/Date/Language.pm
+%{perl_vendorlib}/Date/Parse.pm
 %dir %{perl_vendorlib}/Date/Language
 %{perl_vendorlib}/Date/Language/*.pm
-%{perl_vendorlib}/Time/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Time/Zone.pm
+%{_mandir}/man3/Date::Format.3pm*
+%{_mandir}/man3/Date::Language.3pm*
+%{_mandir}/man3/Date::Language::Hungarian.3pm*
+%{_mandir}/man3/Date::Parse.3pm*
+%{_mandir}/man3/Time::Zone.3pm*
