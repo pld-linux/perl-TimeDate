@@ -7,16 +7,17 @@
 Summary:	Manipulating timezones and parsing/formatting dates in Perl
 Summary(pl.UTF-8):	Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
 Name:		perl-TimeDate
-Version:	2.30
+Version:	2.33
 Release:	1
 Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/G/GB/GBARR/%{pdir}%{pnam}-%{version}.tar.gz
-# Source0-md5:	b1d91153ac971347aee84292ed886c1c
-URL:		http://search.cpan.org/dist/TimeDate/
+Source0:	http://www.cpan.org/modules/by-module/Time/%{pdir}%{pnam}-%{version}.tar.gz
+# Source0-md5:	5e5afe22c8d417417283d1f7f4572a57
+URL:		https://metacpan.org/release/TimeDate
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -71,9 +72,11 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorlib}/Date/Language
 %{perl_vendorlib}/Date/Language/*.pm
 %{perl_vendorlib}/Time/Zone.pm
+%{perl_vendorlib}/TimeDate.pm
 %{_mandir}/man3/Date::Format.3pm*
 %{_mandir}/man3/Date::Language.3pm*
 %{_mandir}/man3/Date::Language::Bulgarian.3pm*
 %{_mandir}/man3/Date::Language::Hungarian.3pm*
 %{_mandir}/man3/Date::Parse.3pm*
 %{_mandir}/man3/Time::Zone.3pm*
+%{_mandir}/man3/TimeDate.3pm.gz
