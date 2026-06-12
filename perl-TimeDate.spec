@@ -7,14 +7,14 @@
 Summary:	Manipulating timezones and parsing/formatting dates in Perl
 Summary(pl.UTF-8):	Manipulowanie strefami czasowymi i analizowanie/formatowanie dat w Perlu
 Name:		perl-TimeDate
-Version:	2.33
+Version:	2.35
 Release:	1
 Epoch:		1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Time/%{pdir}%{pnam}-%{version}.tar.gz
-# Source0-md5:	5e5afe22c8d417417283d1f7f4572a57
+# Source0-md5:	a06d7f6ec7b24581f0564f0f70da1a86
 URL:		https://metacpan.org/release/TimeDate
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
@@ -60,23 +60,26 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# single-level auto/ dir; global cleanup only catches nested auto/X/Y/.packlist
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/auto/TimeDate/.packlist
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc Changes README
 %{perl_vendorlib}/Date/Format.pm
+%dir %{perl_vendorlib}/Date/Format
+%{perl_vendorlib}/Date/Format/*.pm
 %{perl_vendorlib}/Date/Language.pm
 %{perl_vendorlib}/Date/Parse.pm
 %dir %{perl_vendorlib}/Date/Language
 %{perl_vendorlib}/Date/Language/*.pm
 %{perl_vendorlib}/Time/Zone.pm
 %{perl_vendorlib}/TimeDate.pm
-%{_mandir}/man3/Date::Format.3pm*
-%{_mandir}/man3/Date::Language.3pm*
-%{_mandir}/man3/Date::Language::Bulgarian.3pm*
-%{_mandir}/man3/Date::Language::Hungarian.3pm*
+%{_mandir}/man3/Date::Format*.3pm*
+%{_mandir}/man3/Date::Language*.3pm*
 %{_mandir}/man3/Date::Parse.3pm*
 %{_mandir}/man3/Time::Zone.3pm*
-%{_mandir}/man3/TimeDate.3pm.gz
+%{_mandir}/man3/TimeDate.3pm*
